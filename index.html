@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AnalogSea</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<meta charset="utf-8">
+	<meta name="description" content="This an account creation page for AnalogSea">
+</head>
+<body>
+	<header>
+		<img src="images/logo.png" class="logo center" >
+	</header>
+	<form class="signup_form center" action="/signup/" method="post">
+		<h1>Sign up</h1>
+
+		<label for="email" required>Email</label>
+		<input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" name="email" id="email" placeholder="foo@bar.com" required>
+
+		<label for="password" required>Password</label>
+		<input type="Password" name="password" id="password" placeholder="1234passw0rd" required>
+
+		<button type="submit">Sign up</button>
+		<a href="/forgot-password/new">Forgot password?</a>
+	</form>
+	<p>Alreary have an account? <a class="login" href="/login">Log in</a></p>
+
+</body>
+</html>
